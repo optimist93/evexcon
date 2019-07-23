@@ -1,0 +1,89 @@
+.footer
+	background: $blue
+	.title
+		h2
+			&:before
+				top: 10px
+				background: url("../img/title-4.png") no-repeat center
+	.subtitle
+		&-text
+			max-width: 673px
+			color: #fff
+	.map
+		display: flex
+		margin-bottom: 22px
+		&-container
+			width: 809px
+			height: 397px
+			margin-right: 56px
+		&-road
+			align-self: flex-end
+			margin-bottom: 30px
+			max-width: 540px
+			font-family: 'Roboto Light'
+			&_title
+				font-size: 24px
+				font-family: 'Roboto Bold'
+	.contacts
+		display: flex
+		align-items: center
+		&-slider
+			max-width: 809px
+			.arrow
+				z-index: 15
+				&_left
+					left: 15px
+				&_right
+					right: 15px
+			.slick-track
+				.slick-slide
+					outline: none
+		&-slide
+			max-width: 809px
+			img
+				max-width: 100%
+			.slick-list .slick-slide
+				outline: none
+		&-list
+			max-width: 520px
+			padding: 0
+			margin-left: 80px
+			list-style-type: none
+			li
+				margin: 15px 0
+				a
+					position: relative
+					color: $white
+					text-decoration: none
+					font-family: 'Roboto Medium'
+					line-height: 36px
+			&_phone
+				&:before
+					content: ''
+					position: absolute
+					left: -36px
+					top: 2px
+					display: block
+					width: 16px
+					height: 16px
+					background: url("../img/phone.png") no-repeat center
+			&_mail
+				&:before
+					content: ''
+					position: absolute
+					left: -37px
+					top: 6px
+					display: block
+					width: 18px
+					height: 14px
+					background: url("../img/mail.png") no-repeat center
+			&_map
+				&:before
+					content: ''
+					position: absolute
+					left: -37px
+					top: 2px
+					display: block
+					width: 18px
+					height: 28px
+					background: url("../img/map.png") no-repeat center

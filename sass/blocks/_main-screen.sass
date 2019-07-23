@@ -1,0 +1,143 @@
+.main
+	padding: 35px 0 270px 0
+	background: #114c73 url("../img/main/main-bg.jpg") no-repeat center
+	background-size: cover
+	&-slider
+		max-width: 948px
+		margin: 0 auto
+		.slick-dots
+			+flex
+			justify-content: center
+			margin-bottom: 42px
+			list-style-type: none
+			li
+				button
+					display: block
+					width: 45px
+					height: 3px
+					margin: 0 14px
+					background: #fff
+					border: none
+					font-size: 0
+					opacity: 0.5
+					outline: none
+				&.slick-active
+					button
+						background-color: #0f93e7
+.header
+	+flex
+	align-items: center
+	margin-bottom: 60px
+	.logo
+		margin-right: 27px
+		&-descr
+			max-width: 126px
+			margin-right: auto
+			font-family: 'Roboto Light'
+			font-size: 12px
+			color: $white
+	&-phone
+		display: block
+		position: relative
+		padding-left: 35px
+		color: $white
+		text-decoration: none
+		font-size: 24px
+		&:last-child
+			margin-left: 55px
+		&:before
+			content: ''
+			position: absolute
+			left: 0
+			display: block
+			width: 20px
+			height: 20px
+			background: url("../img/main/phone.png") no-repeat center
+.nav
+	margin-bottom: 64px
+	overflow-x: hidden
+	&-list
+		+flex
+		justify-content: center
+		padding: 0
+		margin: 0 -40px
+		list-style-type: none
+		overflow-x: hidden
+		li
+			margin: 0 38px
+			a
+				font-size: 24px
+				color: $white
+				text-decoration: none
+				transition: all 0.5s
+				&:hover
+					color: #ccc
+.main-title
+	max-width: 948px
+	margin: 0 auto 48px auto
+	text-transform: uppercase
+	color: $white
+	text-align: center
+	font-size: 48px
+	line-height: 60px
+.main
+	.container
+		.btn
+			margin: 0 auto 85px auto
+.burger-btn
+	display: none
+	position: relative
+	width: 40px
+	height: 40px
+	span
+		position: absolute
+		top: 50%
+		display: block
+		width: 100%
+		height: 3px
+		margin-top: -1.5px
+		border-radius: 3px
+		background: #fff
+		&:before,
+		&:after
+			content: ''
+			position: absolute
+			top: -10px
+			width: 100%
+			height: 3px
+			border-radius: 3px
+			background: #fff
+		&:after
+			top: 10px
+// mobile-menu
+.m-menu
+	display: flex
+	align-items: center
+	justify-content: center
+	position: fixed
+	top: 0
+	left: 100vw
+	width: 100vw
+	height: 100vh
+	text-align: center
+	background-color: rgba(0, 0, 0, 0.8)
+	+trs
+	z-index: 15
+	&_active
+		left: 0
+	&_close
+		position: absolute
+		top: 15px
+		right: 15px
+		color: #ffffff
+		font-size: 30px
+	&-list
+		margin: 0
+		padding: 0
+		list-style-type: none
+		li
+			margin: 15px 0
+			a
+				color: #fff
+				text-decoration: none
+				font-size: 25px

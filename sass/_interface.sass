@@ -1,0 +1,109 @@
+body
+	font-family: 'Roboto Regular'
+	background-color: #fff
+	font-size: 20px
+	color: $text
+	overflow-x: hidden
+.none
+	display: none
+.container
+	position: relative
+	max-width: 1410px
+	padding-left: 15px
+	padding-right: 15px
+	margin: 0 auto
+.btn
+	display: block
+	padding: 30px 45px 27px 45px
+	border-radius: 5px
+	border: 3px solid $btn-bg
+	background-color: transparent
+	font-family: 'Roboto Bold'
+	font-size: 18px
+	text-transform: uppercase
+	color: $white
+	transition: all 0.5s
+	&:hover
+		color: #000000
+		background-color: #fff
+		border: 3px solid #fff
+.label
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 42px
+	height: 42px
+	margin-right: 15px
+	color: $white
+	background: $blue
+	border-radius: 50%
+	font-family: 'Roboto Black'
+	font-size: 16px
+.date
+	color: #2b2a29
+	font-size: 18px
+.city
+	color: #8b979e
+.more
+	color: $blue
+	text-decoration: none
+	+trs
+	&:hover
+		color: darken($blue, 15%)
+.watch-more
+	align-self: flex-end
+	margin-left: auto
+	color: $blue
+	text-transform: uppercase
+	font-family: 'Roboto Bold'
+	font-size: 12px
+	text-decoration: none
+	+trs
+	&:hover
+		color: darken($blue, 15%)
+.title
+	+flex
+	align-items: center
+	position: relative
+	font-size: 40px
+	font-family: 'Roboto Bold'
+	h2
+		position: relative
+		padding-left: 90px
+		&:before
+			content: ''
+			position: absolute
+			left: 0
+			display: block
+			width: 46px
+			height: 46px
+			background: url("../img/title-1.png") no-repeat center
+	&-logo
+		margin-left: auto
+	.line
+		flex-grow: 1
+		width: auto
+		height: 1px
+		margin: 0 29px 0 74px
+		background-color: #e3ebf1
+.subtitle
+	+flex
+	align-items: center
+	margin-bottom: 54px
+	&-text
+		font-size: 28px
+		font-family: 'Roboto Bold'
+.arrow
+	display: block
+	position: absolute
+	top: 50%
+	margin-top: -20px
+	color: #fff
+	opacity: 0.4
+	font-family: 'Roboto Bold'
+	font-size: 35px
+	cursor: pointer
+	&_left
+		left: -50px
+	&_right
+		right: -50px

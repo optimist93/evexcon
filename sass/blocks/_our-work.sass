@@ -1,0 +1,50 @@
+.our-work
+	.work
+		&-slider
+			position: relative
+			&_item
+				+flex
+				justify-content: flex-end
+				width: 100%
+				padding: 130px 54px 100px 54px
+				background: $blue url("../img/our-work/our-work.jpg")no-repeat center
+				background-size: cover
+				color: #fff
+				box-sizing: border-box
+				&-content
+					max-width: 527px
+					margin-right: 162px
+				&-title
+					font-family: 'Roboto Bold'
+					font-size: 40px
+				&-text
+					font-family: 'Roboto Thin'
+					line-height: 36px
+			.arrow
+				margin-top: -70px
+				z-index: 10
+				&_right
+					right: 42px
+				&_left
+					left: 42px
+			.slick-dots
+				position: absolute
+				bottom: 0
+				left: 50%;
+				padding: 0
+				transform: translateX(-50%)
+				list-style-type: none
+				li
+					display: inline-block
+					button
+						border: none
+						width: 45px
+						height: 3px
+						margin: 0 7px
+						background-color: #fff
+						opacity: 0.5
+						font-size: 0
+						outline: none
+					&.slick-active
+						button
+							opacity: 1

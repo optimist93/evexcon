@@ -1,0 +1,148 @@
+.service
+	padding-top: 107px
+	.title
+		margin-bottom: 42px
+	.subtitle
+		&-text
+			max-width: 601px
+			margin-right: auto
+		.btn
+			color: $text
+			&:hover
+				border-color: $text
+	&-list
+		display: grid
+		grid-template-columns: repeat(auto-fill, minmax(300px, 450px))
+		grid-template-rows: 280px 280px
+		grid-gap: 30px
+		justify-items: center
+		justify-content: center
+		.service-item_content
+			position: relative
+			font-size: 18px
+			z-index: 10
+		&_left
+			+flex
+			justify-content: center
+			//margin: 0 -16.5px
+			max-width: 929px
+			&-item
+				position: relative
+				display: flex
+				align-items: flex-end
+				max-width: 448px
+				height: 280px
+				//margin: 0 16.5px 33px 16.5px
+				padding: 0 72px 34px 40px
+				color: $white
+				box-sizing: border-box
+				&:after
+					content: ''
+					position: absolute
+					left: 0
+					top: 0
+					display: block
+					width: 100%
+					height: 100%
+					background: $blue
+					opacity: 0.9
+					box-shadow: inset 0px -100px 30px 0px rgba(0, 108, 147, 0.6)
+					border: 1px solid #f9fafb
+				&.item-1
+					background: url("../img/service/service-item-1.jpg") no-repeat center
+					background-size: cover
+					.service-item_content
+						position: relative
+						padding-left: 88px
+						&:before
+							content: ''
+							position: absolute
+							left: 0
+							display: block
+							width: 56px
+							height: 62px
+							background: url("../img/service/service-icon-1.png") no-repeat center
+							z-index: 20
+				&.item-2
+					background: url("../img/service/service-item-2.jpg") no-repeat center
+					background-size: cover
+					.service-item_content
+						position: relative
+						padding-left: 88px
+						&:before
+							content: ''
+							position: absolute
+							left: 0
+							display: block
+							width: 54px
+							height: 65px
+							background: url("../img/service/service-icon-2.png") no-repeat center
+							z-index: 20
+				&.item-3
+					background: url("../img/service/service-item-3.jpg") no-repeat center
+					background-size: cover
+					.service-item_content
+						position: relative
+						padding-left: 88px
+						&:before
+							content: ''
+							position: absolute
+							left: 0
+							display: block
+							width: 44px
+							height: 64px
+							background: url("../img/service/service-icon-3.png") no-repeat center
+							z-index: 20
+				&.item-4
+					background: url("../img/service/service-item-4.jpg") no-repeat center
+					background-size: cover
+					.service-item_content
+						position: relative
+						padding-left: 88px
+						&:before
+							content: ''
+							position: absolute
+							left: 0
+							display: block
+							width: 61px
+							height: 50px
+							background: url("../img/service/service-icon-4.png") no-repeat center
+							z-index: 20
+		&_right
+			display: flex
+			align-items: flex-end
+			grid-column: 3
+			grid-row: 1/-1
+			position: relative
+			max-width: 448px
+			padding: 0 72px 34px 40px
+			color: #fff
+			background: url("../img/service/service-item-5.jpg") no-repeat center
+			background-size: cover
+			&:after
+				content: ''
+				position: absolute
+				left: 0
+				top: 0
+				display: block
+				width: 100%
+				height: 100%
+				background: $blue
+				opacity: 0.9
+				box-shadow: inset 0px -100px 30px 0px rgba(0, 108, 147, 0.6)
+				border: 1px solid #f9fafb
+			.service-item_content
+				position: relative
+				padding-top: 88px
+				&:before
+					content: ''
+					position: absolute
+					left: 0
+					top: 0
+					display: block
+					width: 67px
+					height: 67px
+					background: url("../img/service/service-icon-5.png") no-repeat center
+					z-index: 20
+			p
+				z-index: 100
