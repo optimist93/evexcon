@@ -631,16 +631,113 @@
 		</div>
 	</footer>
 	
-	<script src="build/js/jquery-3.3.1.min.js"></script></script>
+	<!-- <div class="popup-portfolio">
+		<div class="popup-dialog">
+			<div class="popup-content">
+				<div class="popup-close">&times;</div>
+				<h3 class="popup-title">
+					Остеоартрит глазами различных специалистов: от общего к частному
+				</h3>
+				<ul class="popup-portfolio_list">
+					<li>
+						<img src="build/img/popup-portfolio/portfolio-2.jpg" alt="портфолио">
+					</li>
+					<li>
+						<img src="build/img/popup-portfolio/portfolio-1.jpg" alt="портфолио">
+					</li>
+					<li>
+						<img src="build/img/popup-portfolio/portfolio-1.jpg" alt="портфолио">
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div> -->
+	<div class="modal-overlay">
+
+		<div class="modal-portfolio">
+			<div class="container">
+				<div class="modal-close">&times;</div>
+				<h3 class="modal-title">
+					Остеоартрит глазами различных специалистов: от общего к частному
+				</h3>
+				<ul class="modal-portfolio_list">
+					<li>
+						<img src="build/img/popup-portfolio/portfolio-2.jpg" alt="портфолио">
+					</li>
+					<li>
+						<img src="build/img/popup-portfolio/portfolio-1.jpg" alt="портфолио">
+					</li>
+					<li>
+						<img src="build/img/popup-portfolio/portfolio-2.jpg" alt="портфолио">
+					</li>
+					<li>
+						<img src="build/img/popup-portfolio/portfolio-1.jpg" alt="портфолио">
+					</li>
+				</ul>
+				<ul class="modal-portfolio_info">
+					<li>
+						<span class="date"></span>
+						6 Региональная Практическая Школа, 19-20 февраля 2019 г.
+					</li>
+					<li>
+						<span class="map"></span>
+						г. Екатеринбург, НПЦ «Бонум», ул. Бардина,9А
+					</li>
+					<li>
+						<span class="person"></span>
+						200 человек
+					</li>
+				</ul>
+				<div class="modal-portfolio_text">
+					<p>
+						Уважаемые коллеги!
+					</p>
+					<p>
+						В рамках развития популярного среди практикующих врачей проекта
+					</p>
+					<p>
+						Региональных Образовательных Школ Ассоциации Травматологов-Ортопедов России,
+					</p>
+					<p>
+						который посвящен проблеме  остеоартрита мы начинаем новый дополнительный
+					</p>
+					<p>
+						цикл школ исключительно ПРАКТИЧЕСКОЙ направленности
+					</p>
+				</div>
+				<div class="modal-organizers">
+					<div class="wrap-legend">
+						<div class="legend">Организаторы</div>
+					</div>
+					<div class="modal-communities">
+						<div class="modal-communities_item">
+							<img src="build/img/main/school-1.png" alt="компания">
+						</div>
+						<div class="modal-communities_item">
+							<img src="build/img/main/school-2.png" alt="компания">
+						</div>
+						<div class="modal-communities_item">
+							<img src="build/img/main/school-3.png" alt="компания">
+						</div>
+						<div class="modal-communities_item">
+							<img src="build/img/main/school-4.png" alt="компания">
+						</div>
+					</div>
+				</div>
+				<button class="btn">Подробнее</button>
+			</div>
+		</div>
+	</div>
+	<script src="build/js/jquery-3.3.1.min.js"></script>
 	<script src="build/js/main.js"></script>
 	<script>
 		let burger = document.querySelector('.burger-btn'),
 			mMenu = document.querySelector('.m-menu'),
 			close = document.querySelector('.m-menu_close');
-			burger.addEventListener('click', ()=> {
+			burger.addEventListener('click', function() {
 				mMenu.classList.add('m-menu_active');
 			});
-			close.addEventListener('click', ()=> {
+			close.addEventListener('click', function() {
 				mMenu.classList.remove('m-menu_active');
 			});
 	</script>

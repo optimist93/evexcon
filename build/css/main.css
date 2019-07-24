@@ -573,6 +573,7 @@ body {
       -webkit-box-pack: center;
       justify-content: center;
       margin-bottom: 42px;
+      padding: 0;
       list-style-type: none; }
       .main-slider .slick-dots li button {
         display: block;
@@ -621,8 +622,7 @@ body {
       background: url("../img/main/phone.png") no-repeat center; }
 
 .nav {
-  margin-bottom: 64px;
-  overflow-x: hidden; }
+  margin-bottom: 64px; }
   .nav-list {
     display: -webkit-box;
     display: flex;
@@ -734,12 +734,15 @@ body {
       display: flex;
       -webkit-box-pack: center;
       justify-content: center; }
+    .schools-slider .slick-list {
+      padding: 5px 0 0 0; }
     .schools-slider_item {
       padding: 38px 26px 22px 30px;
       margin: 0 16px 40px 16px;
       background: #fff;
       box-shadow: 0 0 54px rgba(9, 126, 200, 0.44); }
       .schools-slider_item-img {
+        min-height: 72px;
         margin: 0 auto 40px auto; }
         .schools-slider_item-img img {
           max-width: 100%; }
@@ -1334,6 +1337,135 @@ body {
         height: 28px;
         background: url("../img/map.png") no-repeat center; }
 
+.modal-overlay {
+  visibility: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100; }
+
+.modal-portfolio {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: calc(100% - 30px);
+  max-height: calc(100% - 30px);
+  overflow: auto;
+  padding: 30px 62px 80px 62px;
+  box-sizing: border-box; }
+  .modal-portfolio_list {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto 40px auto;
+    overflow: hidden;
+    padding: 0;
+    list-style-type: none; }
+    .modal-portfolio_list .slick-track .slick-slide {
+      outline: none; }
+    .modal-portfolio_list li {
+      width: 414px;
+      margin-right: 10px; }
+      .modal-portfolio_list li img {
+        max-width: 100%; }
+    .modal-portfolio_list .arrow {
+      z-index: 200; }
+      .modal-portfolio_list .arrow_right {
+        right: 15px; }
+      .modal-portfolio_list .arrow_left {
+        left: 15px; }
+  .modal-portfolio_info {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Light';
+    list-style-type: none; }
+    .modal-portfolio_info .date {
+      display: inline-block;
+      width: 17px;
+      height: 19px;
+      margin-right: 30px;
+      background: url("../img/popup-portfolio/date-icon.png") no-repeat center; }
+    .modal-portfolio_info .map {
+      display: inline-block;
+      width: 17px;
+      height: 19px;
+      margin-right: 30px;
+      background: url("../img/popup-portfolio/map-icon.png") no-repeat center; }
+    .modal-portfolio_info .person {
+      display: inline-block;
+      width: 17px;
+      height: 19px;
+      margin-right: 30px;
+      background: url("../img/popup-portfolio/person-icon.png") no-repeat center; }
+  .modal-portfolio_text {
+    margin-bottom: 60px;
+    font-family: 'Roboto Light'; }
+  .modal-portfolio .btn {
+    color: #2b2a29;
+    outline: none; }
+    .modal-portfolio .btn:hover {
+      border-color: #2b2a29; }
+
+.modal-organizers {
+  position: relative;
+  padding: 41px 20px 38px 20px;
+  margin-bottom: 64px;
+  border: 1px solid #34a2e3; }
+  .modal-organizers .wrap-legend {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; }
+    .modal-organizers .wrap-legend .legend {
+      display: inline-block;
+      padding: 0 20px;
+      background: #ffffff;
+      color: #0f93e7;
+      text-transform: uppercase;
+      font-family: 'Roboto Medium'; }
+
+.modal-communities {
+  max-width: 866px;
+  margin: 0 auto; }
+  .modal-communities_item {
+    max-width: 100%;
+    margin: 0 auto; }
+    .modal-communities_item img {
+      max-width: 100%;
+      text-align: center; }
+  .modal-communities .slick-slide img {
+    margin: 0 auto; }
+  .modal-communities .slick-track .slick-slide {
+    outline: none; }
+
+.modal-close {
+  position: absolute;
+  top: -53px;
+  right: -37px;
+  font-size: 30px;
+  color: #0f93e7;
+  cursor: pointer; }
+
+.modal-title {
+  max-width: 1151px;
+  font-size: 40px;
+  font-family: 'Roboto Bold'; }
+
+.modal-overlay-show {
+  visibility: visible; }
+
 @media (max-width: 1500px) {
   .schools-slider {
     max-width: 1080px;
@@ -1531,7 +1663,17 @@ body {
     height: 15px;
     border-radius: 50%; }
   .events-title {
-    font-size: 25px; } }
+    font-size: 25px; }
+  .modal-title {
+    font-size: 24px;
+    text-align: center; }
+  .modal-portfolio_list {
+    width: auto;
+    max-width: 414px; }
+    .modal-portfolio_list .slick-slide img {
+      margin: 0 auto; }
+  .modal-portfolio .btn {
+    margin: 0 auto; } }
 
 @media (max-width: 576px) {
   .main {
@@ -1561,7 +1703,20 @@ body {
   .footer .map-container {
     width: 300px; }
   .footer .contacts-slider {
-    width: 300px; } }
+    width: 300px; }
+  .modal-close {
+    right: 0;
+    top: -50px; }
+  .modal-portfolio {
+    padding: 30px 15px 30px 15px; }
+  .modal-communities .arrow {
+    z-index: 105; }
+    .modal-communities .arrow img {
+      width: 50%; }
+    .modal-communities .arrow_left {
+      left: -18px; }
+    .modal-communities .arrow_right {
+      right: -28px; } }
 
 @media (max-width: 420px) {
   .schools-slider {
