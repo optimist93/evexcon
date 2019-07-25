@@ -5,6 +5,8 @@
 		+flex
 		justify-content: center
 		.slick-list .slick-slide
+			display: flex
+			flex-direction: column
 			height: auto
 			outline: none
 		.slick-list .slick-track
@@ -12,6 +14,10 @@
 			justify-content: center
 		.slick-list
 			padding: 5px 0 0 0
+		.arrow
+			color: $text
+			font-weight: bold
+			opacity: 1
 		&_item
 			padding: 38px 26px 22px 30px
 			margin: 0 16px 40px 16px
@@ -28,3 +34,4 @@
 				font-family: 'Roboto Medium'
 			&-footer
 				+flex
+				margin-top: auto

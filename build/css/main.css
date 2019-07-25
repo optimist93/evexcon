@@ -727,6 +727,11 @@ body {
     -webkit-box-pack: center;
     justify-content: center; }
     .schools-slider .slick-list .slick-slide {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      flex-direction: column;
       height: auto;
       outline: none; }
     .schools-slider .slick-list .slick-track {
@@ -736,6 +741,10 @@ body {
       justify-content: center; }
     .schools-slider .slick-list {
       padding: 5px 0 0 0; }
+    .schools-slider .arrow {
+      color: #2b2a29;
+      font-weight: bold;
+      opacity: 1; }
     .schools-slider_item {
       padding: 38px 26px 22px 30px;
       margin: 0 16px 40px 16px;
@@ -753,25 +762,63 @@ body {
       .schools-slider_item-footer {
         display: -webkit-box;
         display: flex;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+        margin-top: auto; }
 
 .our-work .work-slider {
   position: relative; }
+  .our-work .work-slider .slick-list .slick-slide {
+    width: 100%; }
   .our-work .work-slider_item {
     display: -webkit-box;
     display: flex;
-    flex-wrap: wrap;
-    -webkit-box-pack: end;
-    justify-content: flex-end;
     width: 100%;
-    padding: 130px 54px 100px 54px;
-    background: #0f93e7 url("../img/our-work/our-work.jpg") no-repeat center;
     background-size: cover;
     color: #fff;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    overflow: hidden; }
+    .our-work .work-slider_item-left {
+      position: relative;
+      width: 50%; }
+      .our-work .work-slider_item-left img {
+        width: 100%;
+        height: 100%; }
+      .our-work .work-slider_item-left:after {
+        content: '';
+        position: absolute;
+        width: calc(100% + 2px);
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background: -webkit-gradient(linear, right top, left top, from(#0f93e7), to(rgba(135, 201, 243, 0.6)));
+        background: -webkit-linear-gradient(right, #0f93e7 0%, rgba(135, 201, 243, 0.6) 100%);
+        background: linear-gradient(270deg, #0f93e7 0%, rgba(135, 201, 243, 0.6) 100%); }
+    .our-work .work-slider_item-right {
+      position: relative;
+      width: 50%;
+      padding-bottom: 30px; }
+      .our-work .work-slider_item-right img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        max-width: 100%;
+        height: auto; }
+      .our-work .work-slider_item-right:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: calc(100% + 2px);
+        height: 100%;
+        z-index: -2;
+        background: #0f93e7; }
     .our-work .work-slider_item-content {
+      position: relative;
+      padding-top: 80px;
       max-width: 527px;
-      margin-right: 162px; }
+      margin-right: 162px;
+      z-index: 10; }
     .our-work .work-slider_item-title {
       font-family: 'Roboto Bold';
       font-size: 40px; }
@@ -779,7 +826,7 @@ body {
       font-family: 'Roboto Thin';
       line-height: 36px; }
   .our-work .work-slider .arrow {
-    margin-top: -70px;
+    margin-top: -30px;
     z-index: 10; }
     .our-work .work-slider .arrow_right {
       right: 42px; }
@@ -1728,12 +1775,8 @@ body {
     margin: 15px 0; }
   .advantages-descr {
     margin: 0 0 10px 0; }
-  .our-work .work-slider_item {
-    padding: 0px 34px 50px 34px; }
-    .our-work .work-slider_item-content {
-      margin-right: 0;
-      margin: 0 auto;
-      text-align: center; }
+  .our-work .work-slider_item-content {
+    margin-right: 90px; }
   .footer .map {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1780,6 +1823,14 @@ body {
     right: 10px; }
   .our-work .work-slider_item-title {
     font-size: 30px; }
+  .our-work .work-slider_item-left {
+    display: none; }
+  .our-work .work-slider_item-right {
+    width: 100%; }
+  .our-work .work-slider_item-content {
+    padding: 40px;
+    margin: 0 auto;
+    text-align: center; }
   .our-work .work-slider .slick-dots li button {
     width: 15px;
     height: 15px;

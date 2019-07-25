@@ -2,18 +2,55 @@
 	.work
 		&-slider
 			position: relative
-			&_item
-				+flex
-				justify-content: flex-end
+			.slick-list .slick-slide
 				width: 100%
-				padding: 130px 54px 100px 54px
-				background: $blue url("../img/our-work/our-work.jpg")no-repeat center
+			&_item
+				display: flex
+				width: 100%
 				background-size: cover
 				color: #fff
 				box-sizing: border-box
+				overflow: hidden
+				&-left
+					position: relative
+					width: 50%
+					img
+						width: 100%
+						height: 100%
+					&:after
+						content: ''
+						position: absolute
+						width: calc(100% + 2px)
+						height: 100%
+						top: 0
+						left: 0
+						z-index: 1
+						background: linear-gradient(270deg, #0f93e7 0%, rgba(135, 201, 243, 0.6) 100%)
+				&-right
+					position: relative
+					width: 50%
+					padding-bottom: 30px
+					img
+						position: absolute
+						right: 0
+						bottom: 0
+						max-width: 100%
+						height: auto
+					&:after
+						content: ''
+						position: absolute
+						top: 0
+						left: 0
+						width: calc(100% + 2px)
+						height: 100%
+						z-index: -2
+						background: $blue
 				&-content
+					position: relative
+					padding-top: 80px
 					max-width: 527px
 					margin-right: 162px
+					z-index: 10
 				&-title
 					font-family: 'Roboto Bold'
 					font-size: 40px
@@ -21,7 +58,7 @@
 					font-family: 'Roboto Thin'
 					line-height: 36px
 			.arrow
-				margin-top: -70px
+				margin-top: -30px
 				z-index: 10
 				&_right
 					right: 42px
