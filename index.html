@@ -59,7 +59,7 @@
 					образовательный проект?
 				</h1>
 			</div>
-			<button class="btn">
+			<button class="btn feedback-btn">
 				Связаться с нами
 			</button>
 		</div>
@@ -386,25 +386,25 @@
 			</div>
 			<div class="service-list">
 				<!-- <div class="service-list_left"> -->
-					<div class="service-list_left-item item-1">
+					<div class="service-list_left-item item-1 service-item">
 						<div class="service-item_content">
 							Аренда оборудования и организация интерактивного голосования
 						</div>
 					</div>
-					<div class="service-list_left-item item-2">
+					<div class="service-list_left-item item-2 service-item">
 						<div class="service-item_content">
 							Аренда оборудования и организация интерактивного голосования
 						</div>
 					</div>
-					<div class="service-list_right">
+					<div class="service-list_right service-item">
 							<p class="service-item_content">Помощь менеджерам по маркетингу, менеджерам по продуктам и BDM по разработке сложных бизнес кейсов, расчетно-финансовых моделей управления бизнесом, внедрению новых методик продаж и прочее.</p>
 						</div>
-					<div class="service-list_left-item item-3">
+					<div class="service-list_left-item item-3 service-item">
 						<div class="service-item_content">
 							Аренда оборудования и организация интерактивного голосования
 						</div>
 					</div>
-					<div class="service-list_left-item item-4">
+					<div class="service-list_left-item item-4 service-item">
 						<div class="service-item_content">
 							Аренда оборудования и организация интерактивного голосования
 						</div>
@@ -630,31 +630,9 @@
 			</div>
 		</div>
 	</footer>
-	
-	<!-- <div class="popup-portfolio">
-		<div class="popup-dialog">
-			<div class="popup-content">
-				<div class="popup-close">&times;</div>
-				<h3 class="popup-title">
-					Остеоартрит глазами различных специалистов: от общего к частному
-				</h3>
-				<ul class="popup-portfolio_list">
-					<li>
-						<img src="build/img/popup-portfolio/portfolio-2.jpg" alt="портфолио">
-					</li>
-					<li>
-						<img src="build/img/popup-portfolio/portfolio-1.jpg" alt="портфолио">
-					</li>
-					<li>
-						<img src="build/img/popup-portfolio/portfolio-1.jpg" alt="портфолио">
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div> -->
-	<div class="modal-overlay">
 
-		<div class="modal-portfolio">
+	<div class="modal-portfolio m-portfolio">
+		<div class="modal-portfolio_dialog">
 			<div class="container">
 				<div class="modal-close">&times;</div>
 				<h3 class="modal-title">
@@ -728,7 +706,229 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="modal-contact">
+		<div class="modal-contact_dialog">
+			<div class="container">
+				<div class="modal-close">&times;</div>
+				<h3 class="modal-contact_title">
+					Связаться с нами
+				</h3>
+				<form action="#" class="modal-contact_form">
+					<div class="modal-contact_form-wrap">
+						<div class="importance">*Обязательное поле</div>
+						<div class="form-control">
+							<label for="name">*Ваше имя</label>
+							<input id="name" type="text" placeholder="Петр Марченко">
+						</div>
+						<div class="form-control">
+							<label for="mail">*Ваш e-mail</label>
+							<input id="mail" type="mail" placeholder="@yandex.org">
+						</div>
+						<div class="form-control">
+							<label for="tel">*Ваш телефон</label>
+							<input id="tel" type="tel" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _">
+						</div>
+						<div class="form-control">
+							<label for="name-company">Название компании</label>
+							<input id="name-company" type="text" placeholder="@yandex.org">
+						</div>
+						<div class="form-control textarea">
+							<label for="text">Ваше сообщение</label>
+							<textarea id="text"></textarea>
+						</div>
+					</div>
+					<div class="modal-contact_form-footer">
+						<button class="btn">
+							отправить
+						</button>
+						<input type="checkbox" id="privacy">
+						<label for="privacy">Я согласен с политикой конфиденциальности</label>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal-portfolio modal-service">
+		<div class="modal-portfolio_dialog">
+			<div class="container">
+				<div class="modal-close">&times;</div>
+				<h3 class="modal-title">
+					Развитие мелицинских организаций
+				</h3>
+				<ul class="modal-portfolio_list">
+					<li>
+						<img src="build/img/popup-portfolio/portfolio-2.jpg" alt="портфолио">
+					</li>
+					<li>
+						<img src="build/img/popup-portfolio/portfolio-1.jpg" alt="портфолио">
+					</li>
+					<li>
+						<img src="build/img/popup-portfolio/portfolio-2.jpg" alt="портфолио">
+					</li>
+					<li>
+						<img src="build/img/popup-portfolio/portfolio-1.jpg" alt="портфолио">
+					</li>
+				</ul>
+				<div class="modal-portfolio_text">
+					<p>
+						Уважаемые коллеги!
+					</p>
+					<p>
+						В рамках развития популярного среди практикующих врачей проекта
+					</p>
+					<p>
+						Региональных Образовательных Школ Ассоциации Травматологов-Ортопедов России,
+					</p>
+					<p>
+						который посвящен проблеме  остеоартрита мы начинаем новый дополнительный
+					</p>
+					<p>
+						цикл школ исключительно ПРАКТИЧЕСКОЙ направленности
+					</p>
+					<p>
+						РЕГИОНАЛЬНЫЕ ПРАКТИЧЕСКИЕ ШКОЛЫ ТРАВМАТОЛОГОВ-ОРТОПЕДОВ
+					</p>
+					<p>
+						Школы 2019 году будут проходит по теме 
+					</p>
+					<p>
+						«Техника внутрисуставных и внесуставных манипуляций на конечностях под контролем ультрасонографии»
+					</p>
+				</div>
+				<div class="modal-organizers">
+					<div class="wrap-legend">
+						<div class="legend">Партнеры</div>
+					</div>
+					<div class="modal-communities">
+						<div class="modal-communities_item">
+							<img src="build/img/main/school-1.png" alt="компания">
+						</div>
+						<div class="modal-communities_item">
+							<img src="build/img/main/school-2.png" alt="компания">
+						</div>
+						<div class="modal-communities_item">
+							<img src="build/img/main/school-3.png" alt="компания">
+						</div>
+						<div class="modal-communities_item">
+							<img src="build/img/main/school-4.png" alt="компания">
+						</div>
+					</div>
+				</div>
+				<button class="btn">Подробнее</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal-portfolio modal-about-project">
+		<div class="modal-portfolio_dialog">
+			<div class="container">
+				<div class="modal-close">&times;</div>
+				<div class="project-name">
+					<img src="build/img/main/school-2.png" alt="имя проекта">
+				</div>
+				<h3 class="modal-title">
+					О проекте
+				</h3>
+				<ul class="modal-portfolio_list">
+					<li>
+						<img src="build/img/popup-portfolio/portfolio-2.jpg" alt="портфолио">
+					</li>
+					<li>
+						<img src="build/img/popup-portfolio/portfolio-1.jpg" alt="портфолио">
+					</li>
+					<li>
+						<img src="build/img/popup-portfolio/portfolio-2.jpg" alt="портфолио">
+					</li>
+					<li>
+						<img src="build/img/popup-portfolio/portfolio-1.jpg" alt="портфолио">
+					</li>
+				</ul>
+				<div class="modal-portfolio_text">
+					<p>
+						Уважаемые коллеги!
+					</p>
+					<p>
+						В рамках развития популярного среди практикующих врачей проекта
+					</p>
+					<p>
+						Региональных Образовательных Школ Ассоциации Травматологов-Ортопедов России,
+					</p>
+					<p>
+						который посвящен проблеме  остеоартрита мы начинаем новый дополнительный
+					</p>
+					<p>
+						цикл школ исключительно ПРАКТИЧЕСКОЙ направленности
+					</p>
+					<p>
+						РЕГИОНАЛЬНЫЕ ПРАКТИЧЕСКИЕ ШКОЛЫ ТРАВМАТОЛОГОВ-ОРТОПЕДОВ
+					</p>
+					<p>
+						Школы 2019 году будут проходит по теме 
+					</p>
+					<p>
+						«Техника внутрисуставных и внесуставных манипуляций на конечностях под контролем ультрасонографии»
+					</p>
+				</div>
+				<button class="btn">Подробнее</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal-portfolio modal-about-partner">
+		<div class="modal-portfolio_dialog">
+			<div class="container">
+				<div class="modal-close">&times;</div>
+				<div class="partner-name">
+					<img src="build/img/company/company-3.jpg" alt="компания">
+				</div>
+				<ul class="modal-portfolio_list">
+					<li>
+						<img src="build/img/modal-partner/modal-partner-1.jpg" alt="партнер">
+					</li>
+					<li>
+						<img src="build/img/modal-partner/modal-partner-2.jpg" alt="партнер">
+					</li>
+					<li>
+						<img src="build/img/modal-partner/modal-partner-3.jpg" alt="партнер">
+					</li>
+					<li>
+						<img src="build/img/modal-partner/modal-partner-2.jpg" alt="партнер">
+					</li>
+				</ul>
+				<div class="modal-portfolio_text">
+					<p>
+						Амджен - одна из ведущих биотехнологических компаний в мире. Амджен имеет строгие ценности и глубоко 
+						вовлечена в мировую научную деятельность и инновации, которые позволяют новым идеям и открытиям 
+						воплотиться в реальных лекарственных средствах для лечения пациентов с тяжелыми заболеваниями
+					</p>
+				</div>
+				<div class="modal-organizers">
+					<div class="wrap-legend">
+						<div class="legend">Поддерживает проекты</div>
+					</div>
+					<div class="modal-communities">
+						<div class="modal-communities_item">
+							<img src="build/img/main/school-1.png" alt="компания">
+						</div>
+						<div class="modal-communities_item">
+							<img src="build/img/main/school-2.png" alt="компания">
+						</div>
+						<div class="modal-communities_item">
+							<img src="build/img/main/school-3.png" alt="компания">
+						</div>
+						<div class="modal-communities_item">
+							<img src="build/img/main/school-4.png" alt="компания">
+						</div>
+					</div>
+				</div>
+				<button class="btn">Подробнее</button>
+			</div>
+		</div>
+	</div>
 	<script src="build/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="https://evexcon.ru/themes/evexcon/assets/js/jquery.maskedinput.js"></script>
 	<script src="build/js/main.js"></script>
 	<script>
 		let burger = document.querySelector('.burger-btn'),

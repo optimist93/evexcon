@@ -124,12 +124,25 @@ $(function() {
 				}
 			}
 		]
-	});
-	$('.portfolio-list li').on('click', function() {
-		$('.modal-overlay').addClass('modal-overlay-show');
-	});
-	$('.modal-close').on('click', function() {
-		$('.modal-overlay').removeClass('modal-overlay-show');
+
 	});
 
+	$('#tel').mask('+7(999)999-99-99');
+
+		// modals
+	
+	modal($('.portfolio-list li'), $('.m-portfolio'));
+	modal($('.feedback-btn'), $('.modal-contact'));
+	modal($('.communities-item'), $('.modal-about-partner'));
+	modal($('.service-item'), $('.modal-service'));
+	
+	function modal(btn, modal){
+		btn.on('click', function(){
+			modal.addClass('modal-overlay-show');
+		});
+		$('.modal-close').on('click', function() {
+			modal.removeClass('modal-overlay-show');
+		});
+	}
+	
 }); // end jquery

@@ -218,6 +218,19 @@
 					margin: 0 auto
 			.btn
 				margin: 0 auto
+	.modal-contact
+		&_form
+			&-wrap
+				.form-control
+					width: 100%
+			&-footer
+				flex-direction: column
+				align-items: center
+				.btn
+					margin-right: 0
+				label
+					order: -1
+					margin-bottom: 15px
 @media (max-width: 576px)
 	.main
 		padding-top: 15px
@@ -250,7 +263,7 @@
 		&-close
 			right: 0
 			top: -50px
-		&-portfolio
+		&-portfolio_dialog
 			padding: 30px 15px 30px 15px
 		&-communities
 			.arrow
@@ -261,6 +274,15 @@
 					left: -18px
 				&_right
 					right: -28px
+		&-contact
+			&_title
+				padding-left: 0
+				font-size: 26px
+				text-align: center
+				&:before
+					content: none
+			&_dialog
+				padding: 30px 20px 30px 20px
 @media (max-width: 420px)
 	.schools
 		&-slider
