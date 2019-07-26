@@ -288,6 +288,13 @@
 					content: none
 			&_dialog
 				padding: 30px 20px 30px 20px
+	.modal-contact_form-wrap 
+		.form-control
+			label
+				margin-right: 0
+			&.textarea 
+				.textarea-header
+					flex-direction: column
 @media (max-width: 420px)
 	.schools
 		&-slider
@@ -311,19 +318,15 @@
 		&-list
 			&_left
 				&-item
-					&.item-1,
-					&.item-2,
-					&.item-3,
-					&.item-4,
-					&.item-5
-						.service-item_content
-							padding-left: 0
-							&:before
-								content: none
+					.service-item_content
+						.item-1,
+						.item-2,
+						.item-3,
+						.item-4
+							display: none
 			&_right
-				.service-item_content
-					&:before
-						content: none
+				.item-5
+					display: none
 @media (max-width: 320px)
 	.schools
 		&-slider

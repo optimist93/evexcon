@@ -144,5 +144,10 @@ $(function() {
 			modal.removeClass('modal-overlay-show');
 		});
 	}
+
+	$('.select2').select2({
+		placeholder: "Выберите тему обращения",
+		minimumResultsForSearch: Infinity
+	});
 	
 }); // end jquery

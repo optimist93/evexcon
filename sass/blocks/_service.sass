@@ -10,6 +10,17 @@
 			color: $text
 			&:hover
 				border-color: $text
+	&-item
+		position: relative
+		overflow: hidden
+		&_bg
+			position: absolute
+			left: 0
+			top: 0
+			width: 100%
+			height: auto
+			img
+				max-width: 100%
 	&-list
 		display: grid
 		grid-template-columns: repeat(auto-fill, minmax(300px, 450px))
@@ -24,7 +35,6 @@
 		&_left
 			+flex
 			justify-content: center
-			//margin: 0 -16.5px
 			max-width: 929px
 			&-item
 				position: relative
@@ -32,7 +42,6 @@
 				align-items: flex-end
 				max-width: 448px
 				height: 280px
-				//margin: 0 16.5px 33px 16.5px
 				padding: 0 72px 34px 40px
 				color: $white
 				box-sizing: border-box
@@ -48,66 +57,26 @@
 					opacity: 0.9
 					box-shadow: inset 0px -100px 30px 0px rgba(0, 108, 147, 0.6)
 					border: 1px solid #f9fafb
-				&.item-1
-					background: url("../img/service/service-item-1.jpg") no-repeat center
-					background-size: cover
-					.service-item_content
-						position: relative
-						padding-left: 88px
-						&:before
-							content: ''
-							position: absolute
-							left: 0
-							display: block
-							width: 56px
-							height: 62px
-							background: url("../img/service/service-icon-1.png") no-repeat center
-							z-index: 20
-				&.item-2
-					background: url("../img/service/service-item-2.jpg") no-repeat center
-					background-size: cover
-					.service-item_content
-						position: relative
-						padding-left: 88px
-						&:before
-							content: ''
-							position: absolute
-							left: 0
-							display: block
-							width: 54px
-							height: 65px
-							background: url("../img/service/service-icon-2.png") no-repeat center
-							z-index: 20
-				&.item-3
-					background: url("../img/service/service-item-3.jpg") no-repeat center
-					background-size: cover
-					.service-item_content
-						position: relative
-						padding-left: 88px
-						&:before
-							content: ''
-							position: absolute
-							left: 0
-							display: block
-							width: 44px
-							height: 64px
-							background: url("../img/service/service-icon-3.png") no-repeat center
-							z-index: 20
-				&.item-4
-					background: url("../img/service/service-item-4.jpg") no-repeat center
-					background-size: cover
-					.service-item_content
-						position: relative
-						padding-left: 88px
-						&:before
-							content: ''
-							position: absolute
-							left: 0
-							display: block
-							width: 61px
-							height: 50px
-							background: url("../img/service/service-icon-4.png") no-repeat center
-							z-index: 20
+				.service-item_content
+					display: flex
+					position: relative
+					z-index: 10
+					.item-1
+						width: 56px
+						height: 62px
+						margin-right: 32px
+					.item-2
+						width: 54px
+						height: 65px
+						margin-right: 32px
+					.item-3
+						width: 44px
+						height: 64px
+						margin-right: 32px
+					.item-4
+						width: 61px
+						height: 50px
+						margin-right: 32px
 		&_right
 			display: flex
 			align-items: flex-end
@@ -131,18 +100,10 @@
 				opacity: 0.9
 				box-shadow: inset 0px -100px 30px 0px rgba(0, 108, 147, 0.6)
 				border: 1px solid #f9fafb
-			.service-item_content
-				position: relative
-				padding-top: 88px
-				&:before
-					content: ''
-					position: absolute
-					left: 0
-					top: 0
-					display: block
-					width: 67px
-					height: 67px
-					background: url("../img/service/service-icon-5.png") no-repeat center
-					z-index: 20
+			.item-5
+				width: 67px
+				height: 67px
+				margin-right: 32px
+				z-index: 10
 			p
 				z-index: 100

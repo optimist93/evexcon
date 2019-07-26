@@ -977,6 +977,17 @@ body {
     color: #2b2a29; }
     .service .subtitle .btn:hover {
       border-color: #2b2a29; }
+  .service-item {
+    position: relative;
+    overflow: hidden; }
+    .service-item_bg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: auto; }
+      .service-item_bg img {
+        max-width: 100%; }
   .service-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 450px));
@@ -1019,66 +1030,27 @@ body {
           opacity: 0.9;
           box-shadow: inset 0px -100px 30px 0px rgba(0, 108, 147, 0.6);
           border: 1px solid #f9fafb; }
-        .service-list_left-item.item-1 {
-          background: url("../img/service/service-item-1.jpg") no-repeat center;
-          background-size: cover; }
-          .service-list_left-item.item-1 .service-item_content {
-            position: relative;
-            padding-left: 88px; }
-            .service-list_left-item.item-1 .service-item_content:before {
-              content: '';
-              position: absolute;
-              left: 0;
-              display: block;
-              width: 56px;
-              height: 62px;
-              background: url("../img/service/service-icon-1.png") no-repeat center;
-              z-index: 20; }
-        .service-list_left-item.item-2 {
-          background: url("../img/service/service-item-2.jpg") no-repeat center;
-          background-size: cover; }
-          .service-list_left-item.item-2 .service-item_content {
-            position: relative;
-            padding-left: 88px; }
-            .service-list_left-item.item-2 .service-item_content:before {
-              content: '';
-              position: absolute;
-              left: 0;
-              display: block;
-              width: 54px;
-              height: 65px;
-              background: url("../img/service/service-icon-2.png") no-repeat center;
-              z-index: 20; }
-        .service-list_left-item.item-3 {
-          background: url("../img/service/service-item-3.jpg") no-repeat center;
-          background-size: cover; }
-          .service-list_left-item.item-3 .service-item_content {
-            position: relative;
-            padding-left: 88px; }
-            .service-list_left-item.item-3 .service-item_content:before {
-              content: '';
-              position: absolute;
-              left: 0;
-              display: block;
-              width: 44px;
-              height: 64px;
-              background: url("../img/service/service-icon-3.png") no-repeat center;
-              z-index: 20; }
-        .service-list_left-item.item-4 {
-          background: url("../img/service/service-item-4.jpg") no-repeat center;
-          background-size: cover; }
-          .service-list_left-item.item-4 .service-item_content {
-            position: relative;
-            padding-left: 88px; }
-            .service-list_left-item.item-4 .service-item_content:before {
-              content: '';
-              position: absolute;
-              left: 0;
-              display: block;
-              width: 61px;
-              height: 50px;
-              background: url("../img/service/service-icon-4.png") no-repeat center;
-              z-index: 20; }
+        .service-list_left-item .service-item_content {
+          display: -webkit-box;
+          display: flex;
+          position: relative;
+          z-index: 10; }
+          .service-list_left-item .service-item_content .item-1 {
+            width: 56px;
+            height: 62px;
+            margin-right: 32px; }
+          .service-list_left-item .service-item_content .item-2 {
+            width: 54px;
+            height: 65px;
+            margin-right: 32px; }
+          .service-list_left-item .service-item_content .item-3 {
+            width: 44px;
+            height: 64px;
+            margin-right: 32px; }
+          .service-list_left-item .service-item_content .item-4 {
+            width: 61px;
+            height: 50px;
+            margin-right: 32px; }
     .service-list_right {
       display: -webkit-box;
       display: flex;
@@ -1104,19 +1076,11 @@ body {
         opacity: 0.9;
         box-shadow: inset 0px -100px 30px 0px rgba(0, 108, 147, 0.6);
         border: 1px solid #f9fafb; }
-      .service-list_right .service-item_content {
-        position: relative;
-        padding-top: 88px; }
-        .service-list_right .service-item_content:before {
-          content: '';
-          position: absolute;
-          left: 0;
-          top: 0;
-          display: block;
-          width: 67px;
-          height: 67px;
-          background: url("../img/service/service-icon-5.png") no-repeat center;
-          z-index: 20; }
+      .service-list_right .item-5 {
+        width: 67px;
+        height: 67px;
+        margin-right: 32px;
+        z-index: 10; }
       .service-list_right p {
         z-index: 100; }
 
@@ -1180,6 +1144,7 @@ body {
       display: inline-block;
       padding: 0 78px;
       color: #0f93e7;
+      margin: 0 auto;
       font-family: 'Roboto Medium';
       background: #fff;
       text-transform: uppercase; }
@@ -1193,8 +1158,25 @@ body {
     align-items: center;
     margin: 45px auto 60px auto;
     max-width: 1056px; }
+    .company .communities-slide {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      flex-direction: column;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      max-width: 100%; }
     .company .communities-item {
-      margin: 0 auto; }
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      width: 248px;
+      height: 121px;
+      margin: 0 auto 20px auto; }
       .company .communities-item img {
         max-width: 100%;
         margin: 0 auto;
@@ -1567,6 +1549,7 @@ body {
       box-sizing: border-box; }
       .modal-contact_form-wrap .form-control label {
         display: block;
+        margin-right: 38px;
         color: #0f93e7;
         font-size: 16px;
         font-family: 'Roboto Thin'; }
@@ -1577,6 +1560,16 @@ body {
         outline: none; }
       .modal-contact_form-wrap .form-control.textarea {
         width: 100%; }
+        .modal-contact_form-wrap .form-control.textarea .textarea-header {
+          display: -webkit-box;
+          display: flex;
+          -webkit-box-align: center;
+          align-items: center; }
+          .modal-contact_form-wrap .form-control.textarea .textarea-header .select2-container {
+            display: block;
+            width: 260px !important; }
+            .modal-contact_form-wrap .form-control.textarea .textarea-header .select2-container select {
+              outline: none; }
       .modal-contact_form-wrap .form-control textarea {
         margin-top: 20px;
         width: 100%;
@@ -1584,6 +1577,24 @@ body {
         border: none;
         outline: none;
         resize: none; }
+    .modal-contact_form-wrap .file-upload {
+      margin-bottom: 40px;
+      color: #0f93e7; }
+      .modal-contact_form-wrap .file-upload label {
+        position: relative;
+        display: block;
+        padding-bottom: 5px;
+        margin-left: 32px;
+        border-bottom: 1px dashed #0f93e7;
+        cursor: pointer; }
+        .modal-contact_form-wrap .file-upload label:before {
+          content: '';
+          position: absolute;
+          left: -32px;
+          top: 0;
+          width: 17px;
+          height: 20px;
+          background: url("../img/file.png") no-repeat center; }
   .modal-contact_form-footer {
     display: -webkit-box;
     display: flex;
@@ -1620,6 +1631,31 @@ body {
     .modal-contact_form-footer input[type=checkbox]:checked + label:before {
       content: '\2714';
       color: #0f93e7; }
+
+.select2-selection.select2-selection--single {
+  background-color: transparent !important;
+  border: none !important;
+  background-image: none !important;
+  outline: none; }
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #0f93e7;
+  font-size: 16px;
+  font-weight: 300;
+  padding-left: 25px;
+  outline: none; }
+
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+  color: #0f93e7; }
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  border: none;
+  background-color: transparent;
+  background-image: none;
+  right: 14px; }
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  border-color: #0f93e7 transparent transparent transparent; }
 
 .modal-about-project .modal-close {
   top: 0; }
@@ -1911,7 +1947,13 @@ body {
     .modal-contact_title:before {
       content: none; }
   .modal-contact_dialog {
-    padding: 30px 20px 30px 20px; } }
+    padding: 30px 20px 30px 20px; }
+  .modal-contact_form-wrap .form-control label {
+    margin-right: 0; }
+  .modal-contact_form-wrap .form-control.textarea .textarea-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column; } }
 
 @media (max-width: 420px) {
   .schools-slider {
@@ -1933,12 +1975,13 @@ body {
         .schools-slider_item-footer .watch-more {
           align-self: auto;
           margin: 10px 0 0 0; }
-  .service-list_left-item.item-1 .service-item_content, .service-list_left-item.item-2 .service-item_content, .service-list_left-item.item-3 .service-item_content, .service-list_left-item.item-4 .service-item_content, .service-list_left-item.item-5 .service-item_content {
-    padding-left: 0; }
-    .service-list_left-item.item-1 .service-item_content:before, .service-list_left-item.item-2 .service-item_content:before, .service-list_left-item.item-3 .service-item_content:before, .service-list_left-item.item-4 .service-item_content:before, .service-list_left-item.item-5 .service-item_content:before {
-      content: none; }
-  .service-list_right .service-item_content:before {
-    content: none; } }
+  .service-list_left-item .service-item_content .item-1,
+  .service-list_left-item .service-item_content .item-2,
+  .service-list_left-item .service-item_content .item-3,
+  .service-list_left-item .service-item_content .item-4 {
+    display: none; }
+  .service-list_right .item-5 {
+    display: none; } }
 
 @media (max-width: 320px) {
   .schools-slider {
